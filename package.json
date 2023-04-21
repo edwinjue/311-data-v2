@@ -2,7 +2,7 @@
   "name": "311-data",
   "version": "0.1.0",
   "engines": {
-    "node": "12.x"
+    "node": "18.x"
   },
   "homepage": "https://www.311-data.org/",
   "dependencies": {
