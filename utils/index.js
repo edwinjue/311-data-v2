@@ -5,13 +5,11 @@ import requestTypes from '@data/requestTypes'
 export default {};
 
 function removeSpaces(str) {
-  if(!!str === false || 
-      typeof typeName !== 'string'
-    ){
+  if(!!str === false || typeof typeName !== 'string'){
       return null
   }
 
-  let newStr = str.replace(/\s/g, '')
+  return str.replace(/\s/g, '')
 }
 
 export function getTypeIdFromTypeName(typeName = "") {
