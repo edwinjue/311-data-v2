@@ -1,3 +1,4 @@
+import dotenv from 'dotenv';
 import 'core-js/stable';
 import 'regenerator-runtime/runtime';
 import React from 'react';
@@ -10,6 +11,8 @@ import { CssBaseline } from '@material-ui/core';
 import theme from '@theme/theme';
 import store from '@root/redux/store';
 import App from '@root/App';
+
+dotenv.config();
 
 Sentry.init({
   dsn: process.env.SENTRY_CLIENT_DSN,
