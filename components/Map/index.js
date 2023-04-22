@@ -280,7 +280,7 @@ class MapContainer extends React.Component {
         missingDateRange[1]);
       allRequestPromises.push(...requestPromises);    
     }
-    await Promise.all(allRequestPromises).then(responses => {
+    await Promise.all(allRequestPromises.flat()).then(responses => {
       responses.forEach(response => this.rawRequests.push(...response.data))
     });
 
