@@ -286,7 +286,7 @@ class MapContainer extends React.Component {
 
     console.log(`this.rawRequests.length: ${this.rawRequests.length}`)
     if(this.rawRequests.length > 0 )
-      console.log(`this.rawRequests[0]: ${this.rawRequests[0]}`)
+      console.log(`this.rawRequests[0]: `, this.rawRequests[0])
 
      if (this.isSubscribed) {
       const { getDataSuccess, updateDateRangesWithRequests } = this.props;
