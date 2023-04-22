@@ -248,14 +248,19 @@ class MapContainer extends React.Component {
    */
   getAllRequests = (startDate, endDate) => {
     const datesInRange = this.getDatesInRange(startDate, endDate);
+    // const url = `${process.env.SOCRATA_API_URL}?$where=createddate%20between%20'${startDate}'%20and%20'${endDate}'&$limit=${REQUEST_LIMIT}&$$app_token=${process.env.SOCRATA_TOKEN}`
+    const url = `${process.env.SOCRATA_API_URL}?$where=` + encodeURI(`createddate between '${startDate}' and '${endDate}'`) +`&$limit=${REQUEST_LIMIT}&$$app_token=${process.env.SOCRATA_TOKEN}`
+        
+    console.log(`url: ${url}`)
     var requests = [];
-    for (const date of datesInRange){
-      const url = new URL(`${process.env.API_URL}/requests`);
-      url.searchParams.append("start_date", date);
-      url.searchParams.append("end_date", date);
-      url.searchParams.append("limit", `${REQUEST_LIMIT}`);
-      requests.push(axios.get(url));
-    }
+    // for (const date of datesInRange){
+    //   const url = new URL(`${process.env.API_URL}/requests`);
+    //   url.searchParams.append("start_date", date);
+    //   url.searchParams.append("end_date", date);
+    //   url.searchParams.append("limit", `${REQUEST_LIMIT}`);
+    //   requests.push(axios.get(url));
+    // }
+    requests.push(axios.get(url));
     return requests;
   };
 
@@ -278,7 +283,9 @@ class MapContainer extends React.Component {
       responses.forEach(response => this.rawRequests.push(...response.data))
     });
 
-    if (this.isSubscribed) {
+    console.log(`this.rawRequests.length: ${this.rawRequests.length}`)
+
+     if (this.isSubscribed) {
       const { getDataSuccess, updateDateRangesWithRequests } = this.props;
       getDataSuccess(this.convertRequests(this.rawRequests));
       const newDateRangesWithRequests = this.resolveDateRanges(missingDateRanges);

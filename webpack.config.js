@@ -91,7 +91,7 @@ module.exports = {
   plugins: [
     new Dotenv({
       // path: './.env',
-      systemvars: true
+      systemvars: true  // needed by vercel environment vars
     }),
     new HtmlWebpackPlugin({
       template: './public/index.html',
