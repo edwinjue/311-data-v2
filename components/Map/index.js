@@ -296,7 +296,7 @@ class MapContainer extends React.Component {
   convertRequests = requests => (requests.map(request => ({
       type: 'Feature',
       properties: {
-        requestId: request.requestId,
+        requestId: request.SRNumber,
         typeId: request.typeId,
         closedDate: request.closedDate,
         // Store this in milliseconds so that it's easy to do date comparisons
