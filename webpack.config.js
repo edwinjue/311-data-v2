@@ -16,9 +16,6 @@ module.exports = {
     ignored: /node_modules/,
   },
   resolve: {
-    fallback: {
-      "fs": false,
-    },
     extensions: ['.js', '.jsx'],
     alias: {
       '@root': __dirname,
