@@ -1,4 +1,4 @@
-const Dotenv = require('dotenv-webpack');
+// const Dotenv = require('dotenv-webpack');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -89,9 +89,9 @@ module.exports = {
     ],
   },
   plugins: [
-    new Dotenv({
-      path: './.env',
-    }),
+    // new Dotenv({
+    //   path: './.env',
+    // }),
     new HtmlWebpackPlugin({
       template: './public/index.html',
       title: '311-Data Neighborhood Engagement Tool',
