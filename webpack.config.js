@@ -89,9 +89,10 @@ module.exports = {
     ],
   },
   plugins: [
-    // new Dotenv({
-    //   path: './.env',
-    // }),
+    new Dotenv({
+      // path: './.env',
+      systemvars: true
+    }),
     new HtmlWebpackPlugin({
       template: './public/index.html',
       title: '311-Data Neighborhood Engagement Tool',
