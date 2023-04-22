@@ -4,6 +4,16 @@ import requestTypes from '@data/requestTypes'
 
 export default {};
 
+function removeSpaces(str) {
+  if(!!str === false || 
+      typeof typeName !== 'string'
+    ){
+      return null
+  }
+
+  let newStr = str.replace(/\s/g, '')
+}
+
 export function getTypeIdFromTypeName(typeName = "") {
   // early return null if we have invalid criteria 
   if(!!typeName === false || 
@@ -14,9 +24,18 @@ export function getTypeIdFromTypeName(typeName = "") {
       return null
   }
 
-  // requestTypes is an array of objects defined in @data/requestTypes
-  const requestObject = requestTypes.find(
-    request => request.typeName.toLowerCase().trim() === typeName.toLowerCase().trim()
+  // requestTypes is an array of objects imported from @data/requestTypes
+  // see if any of our known types are a substring of the input string
+  // (because Socrata API can return something this: "Illegal Dumping Pickup"
+  // which should match "Illegal Dumping")
+  // we remove all spaces from the string to prevent any blanks from throwing
+  // off a match 
+  let lookupStr, searchStr;
+  const requestObject = requestTypes.find( request => {
+      searchStr = removeSpaces(request.typeName.toLowerCase().trim())
+      lookupStr = removeSpaces(typeName.toLowerCase().trim())
+      return lookupStr.indexof(searchStr) >= 0
+    }
   )
 
   // return the typeId of the request with matching typeName or undefined if not found

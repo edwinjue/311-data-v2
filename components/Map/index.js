@@ -299,8 +299,8 @@ class MapContainer extends React.Component {
   convertRequests = requests => (requests.map(request => ({
       type: 'Feature',
       properties: {
-        requestId: request.SRNumber,
-        typeId: getTypeIdFromTypeName(request.RequestType),
+        requestId: request.srnumber,
+        typeId: getTypeIdFromTypeName(request.requesttype),
         closedDate: request.closedDate,
         // Store this in milliseconds so that it's easy to do date comparisons
         // using Mapbox GL JS filters.
