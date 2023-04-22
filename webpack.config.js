@@ -30,6 +30,9 @@ module.exports = {
       '@data': path.resolve(__dirname, 'data'),
 
     },
+    fallback: {
+      "fs": false,
+    }
   },
   module: {
     rules: [
