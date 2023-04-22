@@ -136,8 +136,7 @@ class Map extends React.Component {
   componentDidMount() {
     this.isSubscribed = true;
     mapboxgl.accessToken = process.env.MAPBOX_TOKEN;
-    console.log(`mapboxgl.accessToken: ${mapboxgl.accessToken}`)
-    console.log(`process.env.MAPBOX_TOKEN: ${process.env.MAPBOX_TOKEN}`)
+
     const map = new mapboxgl.Map({
       container: this.mapContainer,
       style: MAP_STYLES[this.state.mapStyle],
