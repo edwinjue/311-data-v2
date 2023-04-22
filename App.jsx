@@ -9,7 +9,7 @@ import { toggleMenu as reduxToggleMenu } from '@reducers/ui';
 import Header from '@components/Header';
 import Footer from '@components/Footer';
 import Routes from './Routes';
-import RouteChange from './components/main/util/RouteChange';
+import RouteChange from '@components/main/util/RouteChange';
 
 // const menuStyles = {
 //   swipeAreaOpen: {
