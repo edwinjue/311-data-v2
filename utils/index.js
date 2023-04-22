@@ -1,7 +1,29 @@
 import _debounce from 'lodash.debounce';
 import settings from '@settings';
+import requestTypes from '@data/requestTypes'
 
 export default {};
+
+export function getTypeIdFromTypeName(typeName = "") {
+  // early return null if we have invalid criteria 
+  if(!!typeName === false || 
+      typeof typeName !== 'string' || 
+      !!requestTypes || 
+      requestTypes.length === 0
+    ){
+      return null
+  }
+
+  // requestTypes is an array of objects defined in @data/requestTypes
+  const requestObject = requestTypes.find(
+    request => request.typeName.toLowerCase().trim() === typeName.toLowerCase().trim()
+  )
+
+  // return the typeId of the request with matching typeName or undefined if not found
+  return requestObject?.typeId
+
+}
+
 
 /*
   Given an object of counts, e.g. --

@@ -10,6 +10,7 @@ import { updateStartDate, updateEndDate, updateNcId, updateRequestTypes} from '@
 import { updateMapPosition } from '@reducers/ui';
 import { trackMapExport } from '@reducers/analytics';
 import { INTERNAL_DATE_SPEC } from '../common/CONSTANTS';
+import { getTypeIdFromTypeName } from '@utils';
 import CookieNotice from '../main/CookieNotice';
 // import "mapbox-gl/dist/mapbox-gl.css";
 import Map from './Map';
@@ -284,6 +285,8 @@ class MapContainer extends React.Component {
     });
 
     console.log(`this.rawRequests.length: ${this.rawRequests.length}`)
+    if(this.rawRequests.length > 0 )
+      console.log(`this.rawRequests[0]: ${this.rawRequests[0]}`)
 
      if (this.isSubscribed) {
       const { getDataSuccess, updateDateRangesWithRequests } = this.props;
@@ -297,7 +300,7 @@ class MapContainer extends React.Component {
       type: 'Feature',
       properties: {
         requestId: request.SRNumber,
-        typeId: request.typeId,
+        typeId: getTypeIdFromTypeName(request.RequestType),
         closedDate: request.closedDate,
         // Store this in milliseconds so that it's easy to do date comparisons
         // using Mapbox GL JS filters.
