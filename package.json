@@ -1,10 +1,27 @@
 {
   "name": "311-data",
-  "version": "0.1.0",
+  "version": "2.0.0",
+  "private": true,
   "engines": {
     "node": "18.x"
   },
   "homepage": "https://www.311-data.org/",
+  "scripts": {
+    "start": "npm run check-env && npm run dev",
+    "setup": "npm i && npm run check-env",
+    "dev": "webpack-dev-server --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js",
+    "lint": "eslint \"./**/*.js*\"",
+    "lint:fix": "eslint --fix \"./**/*.js*\"",
+    "test": "jest --passWithNoTests",
+    "predeploy": "npm run build",
+    "check-env": "node ./utils/checkEnv"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  }, 
   "dependencies": {
     "@mapbox/mapbox-gl-geocoder": "^4.7.0",
     "@material-ui/core": "^4.11.0",
@@ -56,22 +73,6 @@
     "regenerator-runtime": "^0.13.3",
     "webpack-merge": "^4.2.2"
   },
-  "scripts": {
-    "start": "npm run check-env && npm run dev",
-    "setup": "npm i && npm run check-env",
-    "dev": "webpack-dev-server --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js",
-    "lint": "eslint \"./**/*.js*\"",
-    "lint:fix": "eslint --fix \"./**/*.js*\"",
-    "test": "jest --passWithNoTests",
-    "predeploy": "npm run build",
-    "check-env": "node ./utils/checkEnv"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint"
-    }
-  },
   "devDependencies": {
     "@babel/core": "^7.8.4",
     "@babel/plugin-proposal-class-properties": "^7.7.0",
@@ -95,7 +96,6 @@
     "file-loader": "^4.2.0",
     "husky": "^4.3.8",
     "mini-css-extract-plugin": "^0.9.0",
-    "node-sass": "^4.12.0",
     "react-svg-loader": "^3.0.3",
     "sass-loader": "^8.0.0",
     "social-tags-webpack-plugin": "^1.1.0",
