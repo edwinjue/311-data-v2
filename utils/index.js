@@ -35,6 +35,8 @@ export function getTypeIdFromTypeName(typeName = "") {
       return lookupStr.indexof(searchStr) >= 0
     }
   )
+  
+  console.log(`getTypeIdFromTypeName(): requestObject?.typeId = ${requestObject?.typeId}`)
 
   // return the typeId of the request with matching typeName or undefined if not found
   return requestObject?.typeId
