@@ -16,6 +16,9 @@ module.exports = {
     ignored: /node_modules/,
   },
   resolve: {
+    fallback: {
+      "fs": false,
+    },
     extensions: ['.js', '.jsx'],
     alias: {
       '@root': __dirname,
@@ -29,9 +32,6 @@ module.exports = {
       '@settings': path.resolve(__dirname, 'settings'),
       '@data': path.resolve(__dirname, 'data'),
 
-    },
-    fallback: {
-      "fs": false,
     }
   },
   module: {
