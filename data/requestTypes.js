@@ -1,10 +1,7 @@
 /* eslint-disable */
-// This will be removed before launch. Just a quick way of testing
-// different color palettes
-
 import colors from '@theme/colors'
 
-// For tempTypes below:
+// For requestTypes below:
 // 'orderId' is used to order items in main/TypeSelector/index.js.
 // 'typeId' is the actual request ID value from server API.
 const requestTypes = [
