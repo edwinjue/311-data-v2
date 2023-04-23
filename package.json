@@ -5,7 +5,7 @@
   "engines": {
     "node": "14.x"
   },
-  "homepage": "https://www.311-data.org/",
+  "homepage": "https://311-data-v2.vercel.app/",
   "scripts": {
     "start": "npm run check-env && npm run dev",
     "setup": "npm i && npm run check-env",
