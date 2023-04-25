@@ -17,19 +17,17 @@ Our application is open source, built and maintaned by volunteers throughout our
 
 ![image](https://user-images.githubusercontent.com/1448719/233575938-ce84a530-39ff-484e-a848-56121a40fe51.png)
 
-Our mission is to create a user-friendly platform for anyone interested in exploring 311 service requests so that they can immediately gain actionable insights. Our project is called 311-Data v2, and we are looking for sponsors who can support our efforts and help us scale our impact. 
-
-If you are interested in learning more about our project, would like to volunteer or become a sponsor, please 
-[contact us](https://dev.311-data.org/contact). 
+Our mission is to create a user-friendly platform for anyone interested in exploring 311 service requests so that they can immediately gain actionable insights. We are looking for sponsors who can support our efforts and help us scale our impact. If you are interested in learning more about our project, would like to volunteer or become a sponsor, please [contact us](https://dev.311-data.org/contact). 
 
 Thank you for your support.
 
 ## Project Technology
 
-### [Frontend](https://github.com/edwinjue/311-data-v2)
+### Frontend
 * Javascript (React)
 * Redux
 * Material-UI 4.x
+* Socrata API
 * Vercel Deployment
 
 ### [Server/API](https://github.com/edwinjue/311-data-v2-server)
@@ -39,8 +37,23 @@ Thank you for your support.
 * Vercel Serverless API
 * Vercel Deployment
 
+[See here](https://github.com/edwinjue/311-data-v2-server) for more information about 311 Data server technology.
 
-For more information about our backend server, please refer to [this repo](https://github.com/edwinjue/311-data-v2-server) 
+### Data Analysis
+
+* Python
+* Pandas/Numpy/Matplotlib
+* Google Collab/Jupyter Notebook
+* Socrata API
+
+[See here](docs/data_loading.md) for more information about 311 Data project data analysis.
+
+### UI/UX
+
+* Figma
+* Google Drive
+* Adobe CC
+* Miro
 
 ## Resources
 Public data used in this project:
