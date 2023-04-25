@@ -4,10 +4,10 @@ Each day, Los Angelenos report thousands of 311 requests all across LA to resolv
 
 We are a group of volunteers with diverse backgrounds who share a common vision: To make 311 request data more accessible and useful for our diverse communities and their representatives through visualization and data science research. 
 
-By leveraging technology, we can empower local residents and [Neighborhood Councils](https://empowerla.org/councils/) to 
+By leveraging technology, we can empower local residents and the representatives of our [Neighborhood Councils](https://empowerla.org/councils/) to 
 * Access
 * Analyze
-* Visualize 
+* Visualize
 
 the service requests submitted through Los Angeles's 311 system at https://myla311.lacity.org/. 
 
