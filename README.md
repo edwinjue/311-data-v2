@@ -8,7 +8,7 @@ By leveraging technology, we can empower local residents and [Neighborhood Counc
 * Analyze
 * Visualize 
 
-service requests submitted through Los Angeles's 311 system: https://myla311.lacity.org/. 
+the service requests submitted through Los Angeles's 311 system at https://myla311.lacity.org/. 
 
 Our application is open source, built and maintaned by volunteers throughout our community and provides two primary modes of operation:
 * An interactive map showing where different types of 311 requests are being submitted
