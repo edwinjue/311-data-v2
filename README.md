@@ -2,7 +2,7 @@
 ## "Democratizing public data to improve community initiatives"
 Each day, Los Angelenos report thousands of 311 requests all across LA to resolve issues such as illegal dumping and graffiti in their neighborhoods. These requests are then received by relevant agencies, such as the Police, Building and Safety, or Department of Transportation. The agency responds to the request, addresses it, and then closes it once it is fixed. Thanks to Mayor Eric Garcetti's [Open Data Initiative](https://data.lacity.org/), the expansive amount of data associated with these 311 requests is available online.
 
-We are a group of volunteers with diverse backgrounds who share a common vision: To make 311 request data more accessible and useful for our diverse communities and their representatives. 
+We are a group of volunteers with diverse backgrounds who share a common vision: To make 311 request data more accessible and useful for our diverse communities and their representatives through visualization and data science research. 
 
 By leveraging technology, we can empower local residents and [Neighborhood Councils](https://empowerla.org/councils/) to 
 * Access
