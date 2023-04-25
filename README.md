@@ -35,7 +35,7 @@ Our mission is to create a user-friendly platform for anyone interested in explo
 * Vercel Serverless API
 * Vercel Deployment
 
-[See here](https://github.com/edwinjue/311-data-v2-server) for more information about 311 Data server technology.
+[See here](https://github.com/edwinjue/311-data-v2-server#311-data-v2-server) for more information about 311 Data server technology.
 
 ### Data Analysis
 
