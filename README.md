@@ -21,7 +21,7 @@ Our mission is to create a user-friendly platform for anyone interested in explo
 If you are interested in learning more about our project, would like to volunteer or become a sponsor, please 
 [contact us](https://dev.311-data.org/contact). 
 
-Thank you for your attention and support.
+Thank you for your support.
 
 ## Project Technology
 
