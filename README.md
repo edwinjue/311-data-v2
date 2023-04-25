@@ -39,7 +39,7 @@ Thank you for your support.
 * Vercel Deployment
 
 
-[See here](client/README.md) for more information about 311 Data client technology.
+See [here](client/README.md) for more information about 311 Data client technology.
 
 ## Resources
 Public data used in this project:
