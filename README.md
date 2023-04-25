@@ -19,8 +19,6 @@ Our application is open source, built and maintaned by volunteers throughout our
 
 Our mission is to create a user-friendly platform for anyone interested in exploring 311 service requests so that they can immediately gain actionable insights. We are looking for sponsors who can support our efforts and help us scale our impact. If you are interested in learning more about our project, would like to volunteer or become a sponsor, please [contact us](https://dev.311-data.org/contact). 
 
-Thank you for your support.
-
 ## Project Technology
 
 ### Frontend
