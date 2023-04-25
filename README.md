@@ -25,13 +25,19 @@ Thank you for your attention and support.
 
 ## Project Technology
 
-### Frontend
-
+### [Frontend](https://github.com/edwinjue/311-data-v2)
 * Javascript (React)
 * Redux
-* Material UI
-* Socrata API
-* HTML/CSS
+* Material-UI 4.x
+* Vercel Deployment
+
+### [Server/API](https://github.com/edwinjue/311-data-v2-server)
+* Node.js
+* Express.js
+* MongoDb (Atlas)
+* Vercel Serverless API
+* Vercel Deployment
+
 
 [See here](client/README.md) for more information about 311 Data client technology.
 
