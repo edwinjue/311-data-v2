@@ -39,7 +39,7 @@ Thank you for your support.
 * Vercel Deployment
 
 
-See [here](client/README.md) for more information about 311 Data client technology.
+See [here](https://github.com/edwinjue/311-data-v2-server) for more information about 311 Data v2 server technology.
 
 ## Resources
 Public data used in this project:
