@@ -39,7 +39,7 @@ Thank you for your support.
 * Vercel Deployment
 
 
-See [here](https://github.com/edwinjue/311-data-v2-server) for more information about 311 Data v2 server technology.
+For more information about 311 Data v2 server technology, please refer to [this repo](https://github.com/edwinjue/311-data-v2-server) 
 
 ## Resources
 Public data used in this project:
