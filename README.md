@@ -25,7 +25,7 @@ Our mission is to create a user-friendly platform for anyone interested in explo
 * Javascript (React)
 * Redux
 * Material-UI 4.x
-* Socrata API
+* [Socrata API](https://dev.socrata.com/foundry/data.lacity.org/4a4x-mna2)
 * Vercel Deployment
 
 ### [Server/API](https://github.com/edwinjue/311-data-v2-server)
@@ -42,7 +42,7 @@ Our mission is to create a user-friendly platform for anyone interested in explo
 * Python
 * Pandas/Numpy/Matplotlib
 * Google Collab/Jupyter Notebook
-* Socrata API
+* [Socrata API](https://dev.socrata.com/foundry/data.lacity.org/4a4x-mna2)
 
 [See here](docs/data_loading.md) for more information about 311 Data project data analysis.
 
